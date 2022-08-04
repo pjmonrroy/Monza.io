@@ -1,0 +1,74 @@
+body{
+    width: 100%;
+    max-width: 759px;
+    margin: 0 auto;
+}
+header .picture {
+    width: 100%;
+    height: 170px;
+    display: grid;
+    place-items: center;
+    background-color: #00308F;
+    grid-template-columns: minmax(450px, 759px);
+
+}
+.picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: rgb(16, 53, 101) 0px 20px 30px -10px;
+    position: relative;
+    animation: mymove 3s infinite;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-animation: mymove 3s infinite;
+}
+@keyframes mymove {
+    from {left:-100px;}
+    to {left: 140px;}
+}
+
+.main-container-primary{
+    grid-template-columns: minmax(482px, 759px);
+    grid-template-rows: 70px 200px 200px 200px ;
+}
+.nav-ul{
+    border-bottom: 1px solid red;
+    display: flex;
+    justify-content: center;
+
+}
+.navbar {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+
+}
+.list{
+    border-radius: 40px;
+    box-shadow: rgba(15, 83, 16, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.list:hover{
+    background-color: var(--secundary-background);
+}
+
+.list a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#board img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}

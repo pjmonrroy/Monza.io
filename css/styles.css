@@ -1,0 +1,215 @@
+:root {
+    /* colores*/
+    
+    --Text-primary:#ECF0F1;
+    --text-secundary: #23606E;
+    --text-terciary:#008F8C;
+    --primary-background:#011F26;
+    --secundary-background:#025E73;
+    --terciary-background:#03A688;
+    --cuarternary-background:#F2668B;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --black:#141414;
+    --grey:#BABABA;
+    --off-white:#FAF8F7;
+    --just-white:#FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html {
+    font-family: 'Lora', serif;
+    font-size: 62.5%;
+}
+
+/*Estilo del contenedor header*/
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+    background-color: var(--black); 
+}
+header .header-icons-container{
+    width: 100%;
+    height: 70px;
+    display: grid;
+}
+header .header-icons-container .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center;
+}
+header .icons span{
+    color: var(--just-white);
+}
+.icons a {
+    text-decoration: none;
+    display: inline;
+    color: var(--just-white);
+}
+.ad::before{
+    margin-left: 0;
+}
+
+header .picture {
+    width: 100%;
+    height: 170px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(black, blue,  pink,red);
+    grid-template-columns: minmax(320px, 480px);
+
+}
+.picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: rgb(16, 53, 101) 0px 20px 30px -10px;
+    position: relative;
+    animation: mymove 1s infinite;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+@keyframes mymove {
+    from {top: -10px;}
+    to {top: 10px;}
+}
+
+
+.main-container-primary{
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(320px, 480px);
+    grid-template-rows: 100px 400px 300px 100px ;
+}
+.nav-ul{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    columns: 1 / 1;
+    border-bottom: 1px solid red;
+
+}
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+
+}
+.list{
+    display: flex;
+    justify-content: center;
+    width: fit-content ;
+    padding: 20px 10px;
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: rgba(15, 83, 16, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.list:hover{
+    background-color: var(--secundary-background);
+}
+
+.list a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.container-image-social{
+    width: 100%;
+    height: 90rem;
+    background-color: pink;
+    display: grid;
+    grid-auto-columns: repeat(auto-fill, 100px);
+    grid-auto-rows: 200px;
+}
+article{
+    width: 100px;
+    height: 100%;
+    margin-inline-end: 5px;
+    background-color: gray;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns:50px 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+#title {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: red;
+}
+#score {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: red;
+}
+#stats    {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: stretch;
+    background-color: rgb(38, 37, 37);
+    display: flex;
+    align-items: center;
+}
+#stats p{
+    transform: rotate(5deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    font-size: 1.4rem;
+    color: blueviolet;
+    font-weight: 500;
+}
+#board    {
+    justify-content: center;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+
+}
+#board img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#controls {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: stretch;
+    background-color: black;
+    padding-inline-start: 20px;
+    color: white;
+}
+
+.container-instgram{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+}
