@@ -79,11 +79,12 @@ header .picture {
     border-radius: 50%;
     box-shadow: rgb(16, 53, 101) 0px 20px 30px -10px;
     position: relative;
-    animation: mymove 1s infinite;
+    animation: mymove 2s infinite;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    -webkit-animation: mymove 2s infinite;
 }
 @keyframes mymove {
     from {top: -10px;}
